@@ -10,7 +10,7 @@ public class HomeControllerSpec extends ControllerSpec {
     public void shouldShowHomePage() {
         request().integrateViews().get("index");
         a(statusCode()).shouldBeEqual(200);
-        a(responseContent().contains("<h1>Marketing stuff!</h1>")).shouldBeTrue();
+        a(responseContent()).shouldContain("<h1>Marketing stuff!</h1>");
     }
 
 }
