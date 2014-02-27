@@ -9,13 +9,6 @@
     <name>ActiveWeb Example using Bootstrap</name>
 
     <properties>
-        <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
-        <jdbc.url>jdbc:mysql://localhost/simple_development</jdbc.url>
-        <jdbc.user>root</jdbc.user>
-        <jdbc.password></jdbc.password>
-
-        <jdbc.test.url>jdbc:mysql://localhost/simple_test</jdbc.test.url>
-
         <activeweb.version>1.9</activeweb.version>
     </properties>
     
@@ -42,46 +35,6 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
-
-            <!--
-            <plugin>
-                <groupId>com.carbonfive.db-support</groupId>
-                <artifactId>db-migration-maven-plugin</artifactId>
-                <version>0.9.9-m5</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.27</version>
-                    </dependency>
-                </dependencies>
-                <configuration>
-                    <url>${jdbc.url}</url>
-                    <username>${jdbc.user}</username>
-                    <password>${jdbc.password}</password>
-                    <driver>${jdbc.driver}</driver>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>dev_migrations</id>
-                        <goals>
-                            <goal>migrate</goal>
-                        </goals>
-                        <phase>validate</phase>
-                    </execution>
-                    <execution>
-                        <id>test_migrations</id>
-                        <goals>
-                            <goal>migrate</goal>
-                        </goals>
-                        <phase>validate</phase>
-                        <configuration>
-                            <url>${jdbc.test.url}</url>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
--->
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>maven-jetty-plugin</artifactId>
@@ -163,11 +116,5 @@
         </dependency>
     </dependencies>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>c5-public-repository</id>
-            <url>http://mvn.carbonfive.com/public</url>
-        </pluginRepository>
-    </pluginRepositories>
 
 </project>
