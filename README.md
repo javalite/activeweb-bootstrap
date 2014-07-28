@@ -10,7 +10,7 @@ You must have maven available in order to build and run the ActiveWeb applicatio
 
 The easiest way to install and run is to clone this repository, and then run maven to download, and start the server.
 ```
-$ git clone https://github.com/javalite/activeweb.git
+$ git clone git@github.com:javalite/activeweb-bootstrap.git
 $ cd activeweb/activeweb-bootstrap
 $ mvn jetty:run
 ```
