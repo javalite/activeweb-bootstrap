@@ -43,10 +43,6 @@
                     <scanIntervalSeconds>10000</scanIntervalSeconds>
                     <systemProperties>
                         <systemProperty>
-                            <name>activejdbc.log</name>
-                            <value></value>
-                        </systemProperty>
-                        <systemProperty>
                             <name>active_reload</name>
                             <value>true</value>
                         </systemProperty>
@@ -56,19 +52,6 @@
                         </systemProperty>
                     </systemProperties>
                 </configuration>
-            </plugin>
-
-           <plugin>
-                <groupId>org.javalite</groupId>
-                <artifactId>activejdbc-instrumentation</artifactId>
-                <executions>
-                    <execution>
-                        <phase>process-classes</phase>
-                        <goals>
-                            <goal>instrument</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
