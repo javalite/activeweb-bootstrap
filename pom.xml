@@ -9,7 +9,7 @@
     <name>ActiveWeb Example using Bootstrap</name>
 
     <properties>
-        <activeweb.version>1.9</activeweb.version>
+        <activeweb.version>1.13</activeweb.version>
     </properties>
     
     <build>
