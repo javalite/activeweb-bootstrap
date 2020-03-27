@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="activeweb-bootstrap:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>activeweb-bootstrap</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="activeweb-bootstrap-1.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="activeweb-bootstrap:war exploded" />
+    </root>
+  </artifact>
+</component>
